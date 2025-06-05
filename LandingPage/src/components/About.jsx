@@ -50,14 +50,14 @@ function About() {
   return (
     <section className="px-4 lg:px-6">
       <div className="flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 rounded-xl">
-        {/* Title */}
+        {/* Título */}
         <h1 className="mb-12 text-center text-4xl font-bold lg:text-5xl p-5">
           <span className="bg-gradient-to-r from-blue-400 via-purple-600 to-blue-600 bg-clip-text text-transparent">
             ACERCA DE HUUBIE
           </span>
         </h1>
 
-        {/* Content Grid */}
+        {/* Contenido Grid */}
         <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
           {/* Main Description Card */}
           <div className="lg:col-span-1" ref={mainCardRef}>

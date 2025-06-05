@@ -90,14 +90,14 @@ function Contact() {
   return (
     <section className="px-4 lg:px-6">
       <div className="mx-auto max-w-7xl">
-        {/* Title */}
+        {/* Título */}
         <h1 className="mb-12 text-center text-4xl font-bold lg:text-5xl p-5">
           <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 bg-clip-text text-transparent">
             CONTÁCTANOS
           </span>
         </h1>
 
-        {/* Content Grid */}
+        {/* Contenido Grid */}
         <div className="grid gap-8 lg:grid-cols-2">
           {/* Left Side - Contact Information */}
           <div className="space-y-8">
@@ -113,7 +113,7 @@ function Contact() {
                   <span className="text-gray-300">contacto@huubie.com</span>
                 </div>
 
-                {/* Phone */}
+                {/* Teléfono */}
                 <div className="flex items-center">
                   <div className="mr-4 flex h-12 w-12 items-center justify-center rounded-full bg-red-500/20">
                     <Phone className="h-6 w-6 text-red-400" />
@@ -121,7 +121,7 @@ function Contact() {
                   <span className="text-gray-300">+52 (123) 456-7890</span>
                 </div>
 
-                {/* Location */}
+                {/* Ubicación */}
                 <div className="flex items-center">
                   <div className="mr-4 flex h-12 w-12 items-center justify-center rounded-full bg-red-500/20">
                     <MapPin className="h-6 w-6 text-red-400" />
@@ -131,7 +131,7 @@ function Contact() {
               </div>
             </div>
 
-            {/* Business Hours Card */}
+            {/* Card Horarios */}
             <div className="rounded-2xl bg-gray-800 p-8 transform hover:scale-105 shadow-[0_0_50px_rgba(113,82,236,0.2)] hover:shadow-[0_0_50px_rgba(113,82,236,.5)] transition-all duration-500">
               <h3 className="mb-6 text-2xl font-bold text-blue-400">Horario de Atención</h3>
               <div className="flex items-center">
@@ -143,21 +143,21 @@ function Contact() {
             </div>
           </div>
 
-          {/* Right Side - Contact Form */}
+          {/* Formulario Contacto */}
           <div className="rounded-2xl bg-gray-800 p-8 transform hover:scale-105 shadow-[0_0_50px_rgba(113,82,236,0.2)] hover:shadow-[0_0_50px_rgba(113,82,236,.5)] transition-all duration-500">
             <form onSubmit={handleSubmit} className="space-y-6">
-              {/* FormSubmit hidden fields */}
+              {/* Campos ocultos del FormSubmit */}
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
               
-              {/* Error message */}
+              {/* Mensaje Error */}
               {error && (
                 <div className="p-3 rounded-lg bg-red-500/20 border border-red-500/50">
                   <p className="text-red-400 text-sm">{error}</p>
                 </div>
               )}
 
-              {/* Name Field */}
+              {/* Field Nombre */}
               <div>
                 <input
                   type="text"
@@ -171,7 +171,7 @@ function Contact() {
                 />
               </div>
 
-              {/* Email Field */}
+              {/* Field Email */}
               <div>
                 <input
                   type="email"
@@ -185,7 +185,7 @@ function Contact() {
                 />
               </div>
 
-              {/* Subject Field */}
+              {/* Field Asunto */}
               <div>
                 <input
                   type="text"
@@ -199,7 +199,7 @@ function Contact() {
                 />
               </div>
 
-              {/* Message Field */}
+              {/* Field Mensaje */}
               <div>
                 <textarea
                   name="mensaje"

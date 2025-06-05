@@ -7,14 +7,14 @@ function Software() {
   return (
     <section className="bg-gray-900 px-4 py-16 lg:px-6 lg:py-24">
       <div className="mx-auto max-w-7xl">
-        {/* Title */}
+        {/* Título */}
         <h1 className="mb-12 text-center text-4xl font-bold lg:text-5xl p-5">
           <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 bg-clip-text text-transparent">
             NUESTRO SOFTWARE
           </span>
         </h1>
 
-        {/* Software Grid */}
+        {/* Grid Software */}
         <div className="grid gap-8">
           {/* Grid Container */}
           <div className="grid gap-8 lg:grid-cols-2 lg:grid-rows-2">

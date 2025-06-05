@@ -15,6 +15,7 @@ function Header() {
 
   return (
     <div className="flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 pt-35 rounded-xl">
+      {/* Título */}
       <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
         <span className="bg-gradient-to-r from-blue-400 via-purple-600 to-blue-600 bg-clip-text text-transparent">
           Soluciones Empresariales
@@ -22,12 +23,13 @@ function Header() {
           Inteligentes
         </span>
       </h1>
-      
+      {/* Descripción */}
       <p className="text-gray-400 text-lg sm:text-xl max-w-3xl mb-8">
         Transformamos la gestión empresarial con tecnología innovadora para optimizar
         procesos y maximizar resultados.
       </p>
       
+      {/* Botones de acción */}
       <div className="flex flex-col sm:flex-row gap-4">
         <button 
           onClick={() => scrollToSection('contact')}

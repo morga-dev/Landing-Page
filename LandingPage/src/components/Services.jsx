@@ -34,14 +34,14 @@ function Services() {
   return (
     <section className="px-4 lg:px-6">
       <div className="mx-auto max-w-7xl">
-        {/* Title */}
+        {/* Título */}
         <h1 className="mb-12 text-center text-4xl font-bold lg:text-5xl p-5">
           <span className="bg-gradient-to-r from-blue-400 via-purple-600 to-blue-600 bg-clip-text text-transparent">
             NUESTROS SERVICIOS
           </span>
         </h1>
 
-        {/* Services Grid */}
+        {/* Grid Servicios */}
         <div className="grid gap-8 lg:grid-cols-3">
           {['ERP', 'RRHH', 'Finanzas'].map((service, index) => (
             <div

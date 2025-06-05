@@ -74,14 +74,14 @@ function Pricing() {
   return (
     <section className="px-4 lg:px-6">
       <div className="mx-auto max-w-7xl">
-        {/* Title */}
+        {/* Título */}
         <h1 className="mb-12 text-center text-4xl font-bold lg:text-5xl p-5">
           <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 bg-clip-text text-transparent">
             PLANES Y PRECIOS
           </span>
         </h1>
 
-        {/* Pricing Cards */}
+        {/* Cards Precios */}
         <div className="grid gap-8 lg:grid-cols-3">
           {planes.map((plan, index) => (
             <div
@@ -89,7 +89,7 @@ function Pricing() {
               ref={el => cardsRef.current[index] = el}
               className="relative rounded-2xl bg-gray-800 p-8 transform hover:scale-105 shadow-[0_0_50px_rgba(113,82,236,0.2)] hover:shadow-[0_0_50px_rgba(113,82,236,.5)] transition-all duration-500"
             >
-              {/* Popular Badge */}
+              {/* Destacado/Popular */}
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                   <div className="rounded-full bg-purple-600 px-4 py-2 text-sm font-semibold text-white">
@@ -98,23 +98,23 @@ function Pricing() {
                 </div>
               )}
 
-              {/* Icon */}
+              {/* Icono */}
               <div className={`mb-6 flex h-16 w-16 items-center justify-center rounded-full transition-all duration-300 relative z-10 [text-shadow:0_0_20px_rgba(255,255,255,0.75)] ${plan.iconoBg}`}>
                 <span className="text-5xl">
                   {plan.emoji}
                 </span>
               </div>
 
-              {/* Plan Name */}
+              {/* Nombre Plan */}
               <h3 className="mb-4 text-2xl font-bold text-white">{plan.nombre}</h3>
 
-              {/* Price */}
+              {/* Precio */}
               <div className="mb-8">
                 <span className="text-4xl font-bold text-blue-400">{plan.precio}</span>
                 <span className="text-gray-400">/mes</span>
               </div>
 
-              {/* Features */}
+              {/* Características */}
               <ul className="mb-8 space-y-4">
                 {plan.caracteristicas.map((caracteristica, featureIndex) => (
                   <li key={featureIndex} className="flex items-center text-gray-300">
@@ -124,7 +124,7 @@ function Pricing() {
                 ))}
               </ul>
 
-              {/* CTA Button */}
+              {/* Botón seleccionar */}
               <button className={`w-full py-3 text-lg rounded-md bg-brand-purple ${plan.botonEstilo}`}>Seleccionar Plan</button>
 
             </div>

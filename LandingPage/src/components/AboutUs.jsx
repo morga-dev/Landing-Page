@@ -55,20 +55,20 @@ function AboutUs() {
 
   return (
     <section className="px-4 py-12 lg:px-6 lg:py-24"> {/* Ajustado el padding vertical */}
-      <div className="flex flex-col items-center justify-center text-center px-2 sm:px-6 lg:px-8 rounded-xl"> {/* Reducido padding horizontal en móvil */}
-        {/* Title */}
-        <h1 className="mb-8 sm:mb-12 text-center text-3xl sm:text-4xl font-bold lg:text-5xl p-3 sm:p-5"> {/* Ajustado tamaños y espaciados */}
+      <div className="flex flex-col items-center justify-center text-center px-2 sm:px-6 lg:px-8 rounded-xl"> {/* Padding reducido horizontal en móvil */}
+        {/* Título */}
+        <h1 className="mb-8 sm:mb-12 text-center text-3xl sm:text-4xl font-bold lg:text-5xl p-3 sm:p-5"> {/* Tamaños y espaciados ajustados*/}
           <span className="bg-gradient-to-r from-blue-400 via-purple-600 to-blue-600 bg-clip-text text-transparent">  
             QUIÉNES SOMOS
           </span>
         </h1>
 
-        {/* Content Grid */}
-        <div className="grid gap-4 sm:gap-6 lg:grid-cols-3 lg:gap-8"> {/* Reducido gap en móvil */}
-          {/* Main Description Card */}
+        {/* Contenido Grid */}
+        <div className="grid gap-4 sm:gap-6 lg:grid-cols-3 lg:gap-8"> {/* Gap reducido en móvil */}
+          {/* Card Principal*/}
           <div className="lg:col-span-1" ref={mainCardRef}>
             <div className="content-center h-full rounded-2xl bg-gray-800 p-6 sm:p-8 transform hover:scale-105 shadow-[0_0_50px_rgba(113,82,236,0.2)] hover:shadow-[0_0_50px_rgba(113,82,236,.5)] transition-all duration-500">
-              <p className="text-base sm:text-lg leading-relaxed text-gray-300"> {/* Ajustado tamaño de texto */}
+              <p className="text-base sm:text-lg leading-relaxed text-gray-300"> {/* Tamaño de texto ajustado */}
                 Innovación y Experiencia. Somos un equipo apasionado por revolucionar la gestión empresarial a través de
                 soluciones tecnológicas innovadoras. Con años de experiencia en el desarrollo de software empresarial,
                 entendemos los desafíos únicos que enfrentan las empresas en la actualidad.
@@ -79,7 +79,7 @@ function AboutUs() {
           {/* Cards Grid */}
           <div className="lg:col-span-2">
             <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2"> {/* Reducido gap en móvil */}
-              {/* Misión Card */}
+              {/* Card Misión */}
               <div 
                 className="rounded-2xl bg-gray-800 p-6 transform hover:scale-105 shadow-[0_0_50px_rgba(113,82,236,0.2)] hover:shadow-[0_0_50px_rgba(113,82,236,.5)] transition-all duration-500"
                 ref={el => cardsRef.current[0] = el}
@@ -91,7 +91,7 @@ function AboutUs() {
                 <p className="text-gray-400 font-semibold">Simplificar la gestión empresarial</p>
               </div>
 
-              {/* Equipo Card */}
+              {/* Card Equipo */}
               <div 
                 className="rounded-2xl bg-gray-800 p-6 transform hover:scale-105 shadow-[0_0_50px_rgba(113,82,236,0.2)] hover:shadow-[0_0_50px_rgba(113,82,236,.5)] transition-all duration-500"
                 ref={el => cardsRef.current[1] = el}
@@ -103,7 +103,7 @@ function AboutUs() {
                 <p className="text-gray-400 ">Expertos comprometidos</p>
               </div>
 
-              {/* Innovación Card */}
+              {/* Card Innovación */}
               <div 
                 className="rounded-2xl bg-gray-800 p-6 transform hover:scale-105 shadow-[0_0_50px_rgba(113,82,236,0.2)] hover:shadow-[0_0_50px_rgba(113,82,236,.5)] transition-all duration-500"
                 ref={el => cardsRef.current[2] = el}
@@ -115,7 +115,7 @@ function AboutUs() {
                 <p className="text-gray-400 ">Soluciones creativas</p>
               </div>
 
-              {/* Valores Card */}
+              {/* Card Valores */}
               <div 
                 className="rounded-2xl bg-gray-800 p-6 transform hover:scale-105 shadow-[0_0_50px_rgba(113,82,236,0.2)] hover:shadow-[0_0_50px_rgba(113,82,236,.5)] transition-all duration-500"
                 ref={el => cardsRef.current[3] = el}
