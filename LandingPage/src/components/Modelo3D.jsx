@@ -38,10 +38,10 @@ const Modelo3D = () => {
     }
   }, [obj]);
 
-  return <primitive object={obj} scale={6} />;
+  return <primitive object={obj} scale={7} />;
 };
 
-// Pantalla de carga mientras el modelo se importa
+// Mensaje de carga mientras el modelo se importa
 const LoadingScreen = () => {
   return (
     <Html center>
@@ -59,14 +59,12 @@ const ModeloFooter = () => {
         shadows
         gl={{ preserveDrawingBuffer: true }}
       >
-        {/* Fondo transparente */}
-        <color args={["transparent"]} />
         
         {/* Configuración de luces */}
-        <ambientLight intensity={2} />
+        <ambientLight intensity={3} />
         <directionalLight
           position={[10, 10, 10]}
-          intensity={1.5}
+          intensity={8}
           castShadow
         />
 

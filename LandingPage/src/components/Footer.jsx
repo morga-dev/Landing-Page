@@ -48,20 +48,14 @@ function Footer() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
           {/* Logo, descripción y modelo 3D */}
           <div className="transform hover:translate-y-[-5px] transition-transform duration-300">
-            <a href="#" className="inline-block">
-              <img 
-                src={Logo} 
-                alt="Huubie Logo" 
-                className="h-20 w-auto drop-shadow-[0_0_15px_rgba(113,82,236,0.5)]"
-              />
-            </a>
+            {/* Modelo 3D arriba del texto */}
+            <div className="mt- h-[150px] w-full">
+              <ModeloFooter />
+            </div>
             <p className="mt-4 text-gray-400">
               Transformando la gestión empresarial a través de soluciones tecnológicas innovadoras.
             </p>
-            {/* Modelo 3D debajo del texto */}
-            <div className="mt- h-[200px] w-full">
-              <ModeloFooter />
-            </div>
+            
           </div>
 
           {/* Enlaces rápidos */}
