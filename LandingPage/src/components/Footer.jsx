@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 import Logo from '../assets/images/Logo.png';
+import ModeloFooter from './Modelo3D';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,15 +44,9 @@ function Footer() {
 
   return (
     <footer className="relative bg-dark-primary py-20 px-4 overflow-hidden">
-      {/* Efectos Background */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(28,100,241,0.1)_1px,_transparent_1px)] bg-[length:30px_30px] opacity-40" />
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#1C64F1]/20 to-transparent" />
-      </div>
-
       <div ref={footerRef} className="mx-auto max-w-7xl relative z-10">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
-          {/* Logo y descripción */}
+          {/* Logo, descripción y modelo 3D */}
           <div className="transform hover:translate-y-[-5px] transition-transform duration-300">
             <a href="#" className="inline-block">
               <img 
@@ -63,6 +58,10 @@ function Footer() {
             <p className="mt-4 text-gray-400">
               Transformando la gestión empresarial a través de soluciones tecnológicas innovadoras.
             </p>
+            {/* Modelo 3D debajo del texto */}
+            <div className="mt- h-[200px] w-full">
+              <ModeloFooter />
+            </div>
           </div>
 
           {/* Enlaces rápidos */}
