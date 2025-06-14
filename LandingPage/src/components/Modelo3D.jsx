@@ -12,7 +12,7 @@ const Modelo3D = () => {
   const materials = useLoader(MTLLoader, "/Logo3D/material.mtl");
   const obj = useLoader(
     OBJLoader,
-    "/Logo3D/Logo1.obj",
+    "/Logo3D/Logo.obj",
     (loader) => {
       materials.preload();
       loader.setMaterials(materials);
