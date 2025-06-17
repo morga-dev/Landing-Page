@@ -33,7 +33,7 @@ function Contact() {
       const form = e.target
       const formDataToSend = new FormData(form)
       
-      // Método listo para enviar el formulario, agregar el email de destino
+      // Funcion lista para enviar el formulario, agregar el email de destino
       const response = await fetch('https://formsubmit.co/email.com', {
         method: 'POST',
         body: formDataToSend

@@ -7,6 +7,18 @@ gsap.registerPlugin(ScrollTrigger)
 
 function Pricing() {
   const cardsRef = useRef([])
+  
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      // Usar la instancia global de Lenis
+      window.lenis.scrollTo(element, {
+        offset: 0,
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+      });
+    }
+  };
 
   useEffect(() => {
     cardsRef.current.forEach((card, index) => {
@@ -125,7 +137,9 @@ function Pricing() {
               </ul>
 
               {/* Botón seleccionar */}
-              <button className={`w-full py-3 text-lg rounded-md bg-brand-purple ${plan.botonEstilo}`}>Seleccionar Plan</button>
+              <button className={`w-full py-3 text-lg rounded-md bg-brand-purple ${plan.botonEstilo}`}
+              onClick={() => scrollToSection('contact')}
+              >Seleccionar Plan</button>
 
             </div>
           ))}
