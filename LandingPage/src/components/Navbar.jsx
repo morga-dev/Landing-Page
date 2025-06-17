@@ -95,7 +95,7 @@ function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="block text-gray-400 transition-all duration-300 px-4 py-2.5 rounded-lg hover:bg-gray-700/50 flex items-center group"
+              className="text-gray-400 transition-all duration-300 px-4 py-2.5 rounded-lg hover:bg-gray-700/50 flex items-center group"
               style={{ ['--hover-color']: link.color }}
             >
               <span className="transform group-hover:translate-x-2 transition-transform duration-300 hover:text-[var(--hover-color)]">

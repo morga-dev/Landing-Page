@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Nabvar from './components/Navbar'
-import Header from './components/Header'
+import Hero from './components/Hero'
 import AboutUs from './components/AboutUs'
 import About from './components/About'
 import Services from './components/Services'
@@ -17,7 +17,7 @@ gsap.registerPlugin(ScrollTrigger)
 function App() {
   useEffect(() => {
     window.lenis = new Lenis({
-      duration: 1.2,
+      duration: 1,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       orientation: 'vertical',
       gestureOrientation: 'vertical',
@@ -42,8 +42,8 @@ function App() {
   return (
     <div className='min-h-screen bg-dark-primary'>
       <Nabvar />
-      <div id='header' className='bg-dark-primary section'>
-        <Header/>
+      <div id='hero' className='bg-dark-primary section'>
+        <Hero/>
       </div>
       <div id='about-us' className='bg-dark-primary section'>
         <AboutUs />

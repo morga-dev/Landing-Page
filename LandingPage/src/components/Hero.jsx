@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Header() {
+function Hero() {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -48,4 +48,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Hero

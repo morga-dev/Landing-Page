@@ -2,8 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
-import Logo from '../assets/images/Logo.png';
-import ModeloFooter from './Modelo3D';
+import ModeloFooter from './3DModel';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,7 +45,7 @@ function Footer() {
     <footer className="relative bg-dark-primary py-20 px-4 overflow-hidden">
       <div ref={footerRef} className="mx-auto max-w-7xl relative z-10">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
-          {/* Logo, descripción y modelo 3D */}
+          {/* Descripción y modelo 3D */}
           <div className="transform hover:translate-y-[-5px] transition-transform duration-300">
             {/* Modelo 3D arriba del texto */}
             <div className="mt- h-[150px] w-full">
